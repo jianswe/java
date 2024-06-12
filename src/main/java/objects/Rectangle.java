@@ -8,9 +8,9 @@ package objects;
 
 public class Rectangle {
 
-    private double length;
-    private double width;
-    private final int sides = 4;
+    protected double length;
+    protected double width;
+    protected final int sides = 4;
 
     // Default Constructor: all non-static classes have a default constructor
     public Rectangle() {
@@ -22,6 +22,10 @@ public class Rectangle {
     public Rectangle (double length, double width) {
         setLength(length);
         setWidth(width);
+    }
+
+    public void print() {
+        System.out.println("I am a rectangle");
     }
 
     public double calculatePerimeter() {
